@@ -3,7 +3,7 @@
     <h1>Settings</h1>
     <h2>{{`isLoading: ${isLoading}`}}</h2>
 
-    <BaseButton :loading="isLoading" @click="isLoading=!isLoading"></BaseButton>
+    <BaseButton :loading="isLoading" @click="isLoading=!isLoading">Click me</BaseButton>
   </div>
 </template>
 

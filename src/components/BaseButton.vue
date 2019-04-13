@@ -1,5 +1,8 @@
 <template>
-  <button type="button" v-on="$listeners">{{`Click Me! (${loading})`}}</button>
+  <button type="button" v-on="$listeners">
+    <slot></slot>
+    {{loading ? "disabled" : ""}}
+  </button>
 </template>
 
 <script>
